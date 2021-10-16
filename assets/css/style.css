@@ -1,0 +1,37 @@
+
+main{
+    height: 100vh;
+    background-color: red;
+}
+.container{
+    height: 100%;
+}
+/* Login */
+.login{
+    width: 95%;
+}
+.login > div{
+    width: 100%;
+}
+.login ul{
+    border: 0px;
+}
+.login ul button{
+    border: 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid red;
+}
+.login-network{
+    text-align: center;
+}
+.aviso, .senha_recupera{
+    font-size: 0.7rem;
+}
+
+.form-login form button{
+    max-width: 60%;
+}

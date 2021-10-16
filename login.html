@@ -8,11 +8,105 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
         <!-- Nosso Estilo -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
         <!-- Conteúdo principal -->
-        <main></main>
+        <main>
+            <div class="container d-flex justify-content-center">
+                <div class="card login d-flex align-items-center align-self-center">
+                    <div class="card-body">
+                        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="entrar-tab" data-bs-toggle="tab" data-bs-target="#entrar" type="button" role="tab" aria-controls="entrar" aria-selected="true">Entrar</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="cad-tab" data-bs-toggle="tab" data-bs-target="#cad" type="button" role="tab" aria-controls="cad" aria-selected="false">Cadastrar</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-4" id="myTabContent">
+                        <div class="tab-pane fade show active" id="entrar" role="tabpanel" aria-labelledby="entrar-tab">
+                            
+                            <div class="form-login">
+                                <div class="login-network">
+                                    <button>Google</button>
+                                    <button>Apple</button>
+                                    <p>ou</p>
+                                </div>
+                                <form>
+                                    <div class="form-group mb-1">
+                                        <input type="text" class="form-control" name="login" id="login" placeholder="Login">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+                                    </div>
+                                    <div class="form-group d-md-flex my-2 text-end">
+                                        <div class="w-100 text-md-right">
+                                            <a href="#" class="senha_recupera">Esqueceu a Senha?</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-form-group d-flex justify-content-center">
+                                        <button type="submit" class="btn form-control btn-primary rounded-pill submit px-3">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cad" role="tabpanel" aria-labelledby="cad-tab">
+                            <div class="form-login">
+                                <div class="login-network">
+                                    <button>Google</button>
+                                    <button>Apple</button>
+                                    <p>ou</p>
+                                </div>
+                                <form>
+                                    <div class="form-group mb-1">
+                                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+                                    </div>
+                                    <div class="aviso mt-3 text-muted">
+                                        <p>Ao continuar, estou de acordo com os  <a href="#">Termos de Uso</a> e <a href="#">Politicas de Privacidade</a> do HealthPets.</p>
+                                    </div>
+                                    <div class="form-group d-flex justify-content-center">
+                                        <button type="submit" class="btn form-control btn-primary rounded-pill submit px-3">Entrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                <!-- <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="login py-5">
+                            <img src="" class="img d-flex align-items-center justify-content-center" alt="">
+                            <h1 class="">Bem vindo</h1>
+                            <p>Faça login inserindo as informações abaixo</p>
+                            <form action="" class="login-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="login" id="login" placeholder="Login">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Senha">
+                                </div>
+                                <div class="form-group d-md-flex">
+                                    <div class="w-100 text-md-right">
+                                        <a href="#">Recuperar Senha</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn form-control btn-primary rounded submit px-3">Entrar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
+                </div> -->
+            </div>
+        </main>
 
         <!-- Bootstrap Bundle com Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
