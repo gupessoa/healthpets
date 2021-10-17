@@ -57,8 +57,16 @@ main{
 /* index */
 main.content{
     height: 100vh;
+}
+
+main.content > .container{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.bem-vindo{
+    color:white;
+    text-shadow: 2px 2px 3px rgba(150, 150, 150, 1);
 }
